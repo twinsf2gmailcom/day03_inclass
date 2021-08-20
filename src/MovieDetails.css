@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.movie-details {
+  display: flex;
+  width: 440px;
+  flex-direction: row;
+  border: 1px solid lightgray;
+  margin: 15px;
+}
+
+.movie-details-img {
+  width: 2000px;
+}
+.movie-details img {
+  width: 100%;
+}
+
+.movie-details-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1px;
+  display: inline;
+}
+
+.movie-details-title {
+}
+
+.movie-details-rating {
+}
+
+.movie-details-rated {
+}
+
+.movie-details-runtime {
+}
+
+.movie-details-genre {
+}
+
+.movie-details-plot {
+}
+
+.movie-details-actors {
+}

@@ -38,7 +38,7 @@ import MovieCard from './MovieCard';
 //teacher program
 const MovieList = ({movies = []}) => {
     return (
-        <div>
+        <div className="container">
             {movies.map((movie) => (
                 <MovieCard 
                 key={movie.imdbID} 

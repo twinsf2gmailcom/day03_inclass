@@ -55,7 +55,9 @@ function App() {
       : <p>Data are loaded!!</p>
     } */}
     {/* <MovieCard title={movies.Title} type={movies.Type} posterUrl={movies.Poster} /> */}
+    <div className='container'>
     <MovieList movies={movies} />
+    </div>
     </>
   );
 }

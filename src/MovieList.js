@@ -17,21 +17,19 @@ const MovieList = ({movies}) => {
     // );
 
     const posterItems = movies.map((movie) =>
-        <>
-        <img src={movie.Poster} alt={movie.Title} />
-        <div className="movie-card-info">
-            <p>{movie.Title}</p>
-            <div >
-                <span className="movie-card-pill">{movie.Type}</span>
+         
+        <div className="movie-card"> 
+            <img src={movie.Poster} alt={movie.Title} />
+            <div className="movie-card-info">
+                <p>{movie.Title}</p>
+                <div >
+                    <span className="movie-card-pill">{movie.Type}</span>
+                </div>
             </div>
         </div>
-        </>
      );
-
     return (
-        <div className="movie-card">
-          {posterItems}
-        </div>
+          posterItems
     )
 }
 

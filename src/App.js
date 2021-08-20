@@ -47,7 +47,13 @@ function App() {
     )
 
     return (
-    <>
+      <>
+    {/* {isLoading ? <p>Loading.App.App.</p> : <p>Data Fetched</p>} */}
+    {/* {isLoading ? <p>Loading.App.App.</p> 
+      : error
+      ? <p>Thre is an error</p>
+      : <p>Data are loaded!!</p>
+    } */}
     {/* <MovieCard title={movies.Title} type={movies.Type} posterUrl={movies.Poster} /> */}
     <MovieList movies={movies} />
     </>

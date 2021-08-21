@@ -36,7 +36,7 @@ import MovieCard from './MovieCard';
 // }
 
 //teacher program
-const MovieList = ({movies = []}) => {
+const MovieList = ({movies = [], onMovieCardClick}) => {
     return (
         <div className="container">
             {movies.map((movie) => (
@@ -45,6 +45,7 @@ const MovieList = ({movies = []}) => {
                 posterUrl={movie.Poster}
                 title={movie.Title}
                 type={movie.Type}
+                // onClicked = {() => console.log (`${movie.Title} clicked`)}
                 />
             ))}
         </div>

@@ -1,13 +1,13 @@
 import './MovieCard.css';
 
-const MovieCard = (props) => {
+const MovieCard = ({posterUrl, title, type}) => {
     return (
-    <div className="movie-card">
-        <img src={props.posterUrl} alt={props.title}/>
+    <div className="movie-card" onClick = {() => console.log (`${title} clicked`)}>
+        <img src={posterUrl} alt={title}/>
         <div className="movie-card-info">
-            <p>{props.title}</p>
+            <p>{title}</p>
             <div >
-              <span className="movie-card-pill">{props.type}</span>
+              <span className="movie-card-pill">{type}</span>
             </div>
         </div>
     </div>

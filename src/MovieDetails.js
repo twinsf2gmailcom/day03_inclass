@@ -11,17 +11,25 @@ const MovieDetails = ({posterUrl,title,rating,rated,runtime,genre,plot,actors}) 
             <img src={posterUrl} alt={title}/>
         </div>
         <div className="movie-details-info">
-            <div>
-                <p className="movie-details-title">{title}</p>
-                <p className="movie-details-rating">{rating}</p>
+            <div  className="movie-details-inforow">
+                <div className="movie-details-title">{title}</div>
+                <div className="movie-details-rated">{rated}</div>
             </div>
-            <div >
-                <span className="movie-details-rated">{rated}</span>
+            <div   className="movie-details-inforow">
+                <span className="movie-details-rating">{rating}</span>
                 <span className="movie-details-runtime">{runtime}</span>
             </div>
             <span className="movie-details-genre">{genre}</span>
-            <div>
+            <div   className="movie-details-inforow">
+                <p className="movie-details-textlrg">Plot</p>
+            </div>            
+            <div   className="movie-details-inforow">
                 <p className="movie-details-plot">{plot}</p>
+            </div>
+            <div   className="movie-details-inforow">
+                <p className="movie-details-textlrg">Actors</p>
+            </div>  
+            <div   className="movie-details-inforow">
                 <p className="movie-details-actors">{actors}</p>
             </div>
         </div>

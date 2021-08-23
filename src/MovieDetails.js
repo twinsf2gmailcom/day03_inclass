@@ -4,11 +4,15 @@ import './MovieDetails.css';
 // The component should take the following props: posterUrl, title, rated, runtime, genre, plot, actors, rating.
 // The component should render UI as shown below (use styles or className for styling).
 
-const MovieDetails = ({posterUrl,title,rating,rated,runtime,genre,plot,actors}) => {
+const MovieDetails = ({posterUrl,title,rating,rated,runtime,genre,plot,actors,onClickBtn}) => {
     return (
+        <>
+    <div className="movie-details-close">
+        <p onClick={onClickBtn}>Close</p>
+    </div>
     <div className="movie-details">
         <div className="movie-details-img">
-            <img src={posterUrl} alt={title}/>
+            <img src={posterUrl} alt={title} />
         </div>
         <div className="movie-details-info">
             <div  className="movie-details-inforow">
@@ -32,8 +36,9 @@ const MovieDetails = ({posterUrl,title,rating,rated,runtime,genre,plot,actors}) 
             <div   className="movie-details-inforow">
                 <p className="movie-details-actors">{actors}</p>
             </div>
-        </div>
+        </div>       
     </div>
+    </>
     )
 }
 

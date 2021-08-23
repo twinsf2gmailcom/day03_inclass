@@ -1,0 +1,10 @@
+.container-details {
+  /* display: flex; */
+  width: 70%;
+  /* flex-wrap: wrap; */
+  /* background-color: white; */
+  margin: 10px;
+  position: fixed;
+  top: 10px;
+  z-index: 10;
+}

@@ -1,16 +1,17 @@
-.container {
+.movie-details-close {
   display: flex;
-  flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
-  background-color: white;
-  z-index: 1;
+  justify-content: flex-end;
+  background-color: gray;
+  margin: 15px;
 }
 
 .movie-details {
   display: flex;
-  width: 70%;
+  width: 100%;
   flex-direction: row;
+  background-color: white;
   border: 1px solid lightgray;
   margin: 15px;
 }

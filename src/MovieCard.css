@@ -3,6 +3,7 @@
   width: 250px;
   flex-direction: column;
   border: 1px solid ligthgrey;
+  z-index: 1;
 }
 .movie-card img {
   width: 100%;
